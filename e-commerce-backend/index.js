@@ -13,12 +13,9 @@ require('dotenv').config()
 app.use(express.json());
 app.use(cors());
 
-// Database Connection With MongoDB
-mongoose.connect(process.env.URL);
-// paste your mongoDB Connection string above with password
-// password should not contain '@' special character
 
-//Image Storage Engine 
+mongoose.connect(process.env.URL);
+
 const storage = multer.diskStorage({
     destination: './upload/images',
     filename: (req, file, cb) => {
