@@ -1,4 +1,6 @@
-## Available Scripts
+e-commerce is a personal project to learn MERN app development. 
+
+## To Run the code:
 
 In the backend directory, you can run:
 
